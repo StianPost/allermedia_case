@@ -11,12 +11,6 @@ function Card({ width, elm, widthVal }) {
     bgCol = 'bg-gray-900';
     textCol = 'text-white';
   }
-  const imageStyle = {
-    backgroundImage: 'url(' + elm.imageUrl + '&height=1000&width=1500' + ')',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-  };
 
   return (
     <article
@@ -69,7 +63,6 @@ function Card({ width, elm, widthVal }) {
           src={elm.imageUrl + '&height=1000&width=1500'}
           alt="alt tekst"
         />
-        {/* <div className=" h-96 w-full" style={imageStyle}></div> */}
       </a>
     </article>
   );
